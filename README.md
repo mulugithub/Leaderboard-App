@@ -90,7 +90,7 @@
 
 > Click the live demo to access the application.
 
-- [Click here to see the Live Demo](https://mulugithub.github.io/Leaderboard-App/) of the project.
+- [Click here to see the Live Demo](https://mulugithub.github.io/Leaderboard-App/dist/) of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
