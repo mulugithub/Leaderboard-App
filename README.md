@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To Do List App] <a name="about-project"></a>
+# 📖 [Leaderboard App] <a name="about-project"></a>
 
 **[Leaderboard App]** Leaderboard app allow players add their scores and fetch scores from API. All data is preserved using the external Leaderboard API service. Built with HTML, CSS,  JavaScript, and Webpack.
 
@@ -90,7 +90,7 @@
 
 > Click the live demo to access the application.
 
-- [Click here to see the Live Demo]() of the project.
+- [Click here to see the Live Demo](https://mulugithub.github.io/Leaderboard-App/) of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
