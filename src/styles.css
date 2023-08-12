@@ -47,7 +47,7 @@ body {
 }
 
 .score-list {
-  border: 3px solid #ccc;
+  border: 3px solid #494545;
 }
 
 h2 {
@@ -81,6 +81,14 @@ button {
   border: 1px solid #000;
 }
 
+button:hover {
+  color: #fff;
+  background-color: #1768af;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px #1768af;
+}
+
 .recent-score ul {
   list-style: none;
   padding: 0;
@@ -95,33 +103,5 @@ button {
 }
 
 .score-list li:nth-child(odd) {
-  background-color: #686767;
-}
-
-.error {
-  background-color: #eee;
-  color: #ff0707;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  padding: 0.8rem;
-  font-weight: 600;
-  min-width: 40%;
-  max-width: 100%;
-  text-align: center;
-}
-
-.success {
-  background-color: #eee;
-  color: rgb(10, 193, 10);
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  padding: 0.8rem;
-  font-weight: 600;
-  min-width: 40%;
-  max-width: 100%;
-  text-align: center;
-}
-
-.hidden {
-  display: none;
+  background-color: #c8c2c2;
 }
