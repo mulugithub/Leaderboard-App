@@ -81,6 +81,7 @@
 - [ ]  HTML template
 - [ ]  style the app with CSS loader
 - [ ]  HTML webpack plugin
+- [ ]  send and receive data from API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +166,6 @@ To check for js errors run:
 
 > The following features will add to the project.
 
-- [ ]  send and receive data from API.
 - [ ]  final touches.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

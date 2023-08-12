@@ -13,6 +13,13 @@ header {
   padding: 2rem 0.8rem 1.8rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
 body {
   min-height: 80vh;
   font-size: 1rem;
@@ -21,12 +28,10 @@ body {
   max-width: 100%;
 }
 
-section.score-container {
+.score-container {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
-  width: 100%;
-  overflow: hidden;
 }
 
 .recent-score .recent-score-header {
@@ -90,7 +95,7 @@ button {
 }
 
 .score-list li:nth-child(odd) {
-  background-color: #f4f2f2;
+  background-color: #686767;
 }
 
 .error {
@@ -115,4 +120,8 @@ button {
   min-width: 40%;
   max-width: 100%;
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
