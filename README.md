@@ -65,11 +65,13 @@
     <li><a href="https://webpack.js.org/">webpack</a></li>
   </ul>
 </details>
+<details>
 <summary>API</summary>
   <ul>
     <li><a href="https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3">Leaderboard API service</a></li>
   </ul>
 </details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -82,6 +84,7 @@
 - [ ]  style the app with CSS loader
 - [ ]  HTML webpack plugin
 - [ ]  send and receive data from API.
+- [ ]  final touches.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,8 +168,7 @@ To check for js errors run:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > The following features will add to the project.
-
-- [ ]  final touches.
+- [ ] Rebuilt using React
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
