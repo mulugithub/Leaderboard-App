@@ -288,7 +288,7 @@ body {
 }
 
 .score-list {
-  border: 3px solid #ccc;
+  border: 3px solid #494545;
 }
 
 h2 {
@@ -322,6 +322,14 @@ button {
   border: 1px solid #000;
 }
 
+button:hover {
+  color: #fff;
+  background-color: #1768af;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px #1768af;
+}
+
 .recent-score ul {
   list-style: none;
   padding: 0;
@@ -336,37 +344,9 @@ button {
 }
 
 .score-list li:nth-child(odd) {
-  background-color: #686767;
+  background-color: #c8c2c2;
 }
-
-.error {
-  background-color: #eee;
-  color: #ff0707;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  padding: 0.8rem;
-  font-weight: 600;
-  min-width: 40%;
-  max-width: 100%;
-  text-align: center;
-}
-
-.success {
-  background-color: #eee;
-  color: rgb(10, 193, 10);
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  padding: 0.8rem;
-  font-weight: 600;
-  min-width: 40%;
-  max-width: 100%;
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,SAAS;EACT,sBAAsB;EACtB,+BAA+B;AACjC;;AAEA;EACE,kBAAkB;EAClB,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,eAAe;EACf,yBAAyB;EACzB,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,SAAS;EACT,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,sBAAsB;EACtB,gCAAgC;AAClC;;AAEA;EACE,sBAAsB;EACtB,WAAW;EACX,sBAAsB;EACtB,sBAAsB;EACtB,eAAe;EACf,oBAAoB;EACpB,0BAA0B;EAC1B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,cAAc;EACd,qBAAqB;EACrB,eAAe;EACf,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,sBAAsB;EACtB,uBAAuB;EACvB,qBAAqB;EACrB,eAAe;EACf,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;AACf","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n* {\r\n  margin: 0;\r\n  border: 0;\r\n  box-sizing: border-box;\r\n  font-family: \"Lato\", sans-serif;\r\n}\r\n\r\nheader {\r\n  text-align: center;\r\n  background-color: #ccc;\r\n  padding: 2rem 0.8rem 1.8rem;\r\n}\r\n\r\nmain {\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\nbody {\r\n  min-height: 80vh;\r\n  font-size: 1rem;\r\n  background-color: #f5f5f5;\r\n  min-width: 70%;\r\n  max-width: 100%;\r\n}\r\n\r\n.score-container {\r\n  display: flex;\r\n  gap: 3rem;\r\n  justify-content: center;\r\n}\r\n\r\n.recent-score .recent-score-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 3rem;\r\n}\r\n\r\n.recent-score {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n}\r\n\r\n.score-list {\r\n  border: 3px solid #ccc;\r\n}\r\n\r\nh2 {\r\n  margin: 0;\r\n  text-align: center;\r\n  margin-top: 2rem;\r\n}\r\n\r\nform {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  margin-top: 2rem;\r\n}\r\n\r\ninput {\r\n  padding: 0.25rem;\r\n  border: none;\r\n  border-radius: 0.25rem;\r\n  box-shadow: inset 0 0 0 1px #ccc;\r\n}\r\n\r\nbutton {\r\n  background-color: #fff;\r\n  color: #000;\r\n  padding: 0.3rem 0.6rem;\r\n  border-radius: 0.25rem;\r\n  cursor: pointer;\r\n  align-self: flex-end;\r\n  box-shadow: 4px 4px 0 #000;\r\n  border: 1px solid #000;\r\n}\r\n\r\n.recent-score ul {\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.recent-score ul li {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0.5rem;\r\n}\r\n\r\n.score-list li:nth-child(odd) {\r\n  background-color: #686767;\r\n}\r\n\r\n.error {\r\n  background-color: #eee;\r\n  color: #ff0707;\r\n  border-radius: 0.5rem;\r\n  font-size: 1rem;\r\n  padding: 0.8rem;\r\n  font-weight: 600;\r\n  min-width: 40%;\r\n  max-width: 100%;\r\n  text-align: center;\r\n}\r\n\r\n.success {\r\n  background-color: #eee;\r\n  color: rgb(10, 193, 10);\r\n  border-radius: 0.5rem;\r\n  font-size: 1rem;\r\n  padding: 0.8rem;\r\n  font-weight: 600;\r\n  min-width: 40%;\r\n  max-width: 100%;\r\n  text-align: center;\r\n}\r\n\r\n.hidden {\r\n  display: none;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,SAAS;EACT,sBAAsB;EACtB,+BAA+B;AACjC;;AAEA;EACE,kBAAkB;EAClB,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,eAAe;EACf,yBAAyB;EACzB,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,SAAS;EACT,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,sBAAsB;EACtB,gCAAgC;AAClC;;AAEA;EACE,sBAAsB;EACtB,WAAW;EACX,sBAAsB;EACtB,sBAAsB;EACtB,eAAe;EACf,oBAAoB;EACpB,0BAA0B;EAC1B,sBAAsB;AACxB;;AAEA;EACE,WAAW;EACX,yBAAyB;EACzB,qBAAqB;EACrB,YAAY;EACZ,2BAA2B;AAC7B;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n* {\r\n  margin: 0;\r\n  border: 0;\r\n  box-sizing: border-box;\r\n  font-family: \"Lato\", sans-serif;\r\n}\r\n\r\nheader {\r\n  text-align: center;\r\n  background-color: #ccc;\r\n  padding: 2rem 0.8rem 1.8rem;\r\n}\r\n\r\nmain {\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n  width: 100%;\r\n}\r\n\r\nbody {\r\n  min-height: 80vh;\r\n  font-size: 1rem;\r\n  background-color: #f5f5f5;\r\n  min-width: 70%;\r\n  max-width: 100%;\r\n}\r\n\r\n.score-container {\r\n  display: flex;\r\n  gap: 3rem;\r\n  justify-content: center;\r\n}\r\n\r\n.recent-score .recent-score-header {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 3rem;\r\n}\r\n\r\n.recent-score {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n}\r\n\r\n.score-list {\r\n  border: 3px solid #494545;\r\n}\r\n\r\nh2 {\r\n  margin: 0;\r\n  text-align: center;\r\n  margin-top: 2rem;\r\n}\r\n\r\nform {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  margin-top: 2rem;\r\n}\r\n\r\ninput {\r\n  padding: 0.25rem;\r\n  border: none;\r\n  border-radius: 0.25rem;\r\n  box-shadow: inset 0 0 0 1px #ccc;\r\n}\r\n\r\nbutton {\r\n  background-color: #fff;\r\n  color: #000;\r\n  padding: 0.3rem 0.6rem;\r\n  border-radius: 0.25rem;\r\n  cursor: pointer;\r\n  align-self: flex-end;\r\n  box-shadow: 4px 4px 0 #000;\r\n  border: 1px solid #000;\r\n}\r\n\r\nbutton:hover {\r\n  color: #fff;\r\n  background-color: #1768af;\r\n  border-radius: 0.5rem;\r\n  border: none;\r\n  box-shadow: 2px 2px #1768af;\r\n}\r\n\r\n.recent-score ul {\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.recent-score ul li {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0.5rem;\r\n}\r\n\r\n.score-list li:nth-child(odd) {\r\n  background-color: #c8c2c2;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
